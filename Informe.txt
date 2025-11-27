@@ -1,0 +1,13 @@
+Explicación de las diferencias entre trabajar con arrays y listas enlazadas
+El Array es un bloque de tamaño fijo reservado de antemano.La Lista Enlazada es dinámica; usa nodos dispersos que se van creando y "enganchando" con punteros a medida que se necesitan.En el Array el acceso es directo por índice (array[2]). En la Lista perdemos el índice, para llegar a un elemento hay que recorrer la cadena nodo por nodo desde el principio (while).
+
+
+
+Análisis de ventajas y desventajas de usar listas enlazadas en este contexto.
+Ventajas:
+-La memoria se ajusta sola. Si un estudiante tiene 1 materia o 50, la lista crece exactamente lo necesario. No tenemos el límite fijo que teníamos con el Array.
+-Agregar un dato es muy eficiente solo creas el nodo y enganchas la referencia del último. No hay que mover otros elementos de lugar.
+
+Desventajas:
+-No existe el índice [i]. Si quieres el dato en la posición 10, obligatoriamente tienes que recorrer los 9 anteriores.
+-Problemas con la busqueda, no se puede usar la Búsqueda Binaria directamente sobre la lista se tiene que convertir a Array para que funcione.
